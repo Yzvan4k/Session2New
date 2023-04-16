@@ -11,6 +11,8 @@ object Connection {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val api = retrofit.create(API::class.java)
+
+    var token =""
 }
 fun error(context:Context,title:String,message:String){
     AlertDialog.Builder(context)
